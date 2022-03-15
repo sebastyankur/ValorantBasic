@@ -1,2 +1,3 @@
 # ValorantBasic
-this is just a random student doing work for school
+this is just a random student doing work for school for money
+
