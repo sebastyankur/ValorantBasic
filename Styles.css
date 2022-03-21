@@ -1,5 +1,5 @@
 html {
-    text-align: center;        
+    text-align: center;  
 }
 
 body {
@@ -8,6 +8,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 /*Logo Format*/
 img.logo {
     width: 252;
@@ -27,7 +28,7 @@ img.others {
 }
 
 /*Navigation Bar*/
-nav ul {
+ul.nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -35,21 +36,23 @@ nav ul {
     overflow: hidden;
 }
 
-nav li {
+div.nav {
     float: left;
     border-right: 1px solid #ece8e1;
+    position: relative;
 }
 
-nav a {
+div.nav a {
     display: block;
     padding: 14px 16px;
     color: #ece8e1;
     text-align: center;
     text-decoration: none;
     font-size: 15px;
+    min-width: 150px;
 }
 
-nav li a:hover {
+div.nav a:hover {
     background-color: #000070;
 }
 /*End*/
@@ -86,13 +89,35 @@ ul.items {
     list-style-type: none;
 }
 
-div {
+ul.listings_four div {
     padding-bottom: 30px;
 }
 
-div img {
+ul.listings_four img {
     padding-left: 20px;
 }
 
+/*Dropdown Menu*/
+div.DropdownMenu {
+display: none;
+position: fixed;
+background-color: #ece8e1;
+min-width: 150px;
+z-index: 1;
+}
 
 
+div.DropdownMenu a {
+color: black;
+padding: 14px 18px;
+display: block;
+}
+  
+div.DropdownMenu a:hover {
+    background-color: #ddd;
+}
+
+div:hover div.DropdownMenu {
+    display: block;
+}
+/*End*/
