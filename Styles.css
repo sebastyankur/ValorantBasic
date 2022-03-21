@@ -7,6 +7,7 @@ body {
     background-color: #ece8e1;
     margin: 0;
     padding: 0;
+    overflow: overlay;
 }
 
 /*Logo Format*/
@@ -89,6 +90,7 @@ ul.items {
     list-style-type: none;
 }
 
+/*Custom format for map display*/
 ul.listings_four div {
     padding-bottom: 30px;
 }
@@ -96,7 +98,7 @@ ul.listings_four div {
 ul.listings_four img {
     padding-left: 20px;
 }
-
+/*End*/
 /*Dropdown Menu*/
 div.DropdownMenu {
 display: none;
@@ -114,10 +116,28 @@ display: block;
 }
   
 div.DropdownMenu a:hover {
-    background-color: #ddd;
+    background-color: #fff;
 }
 
 div:hover div.DropdownMenu {
     display: block;
+}
+/*End*/
+
+/*Custom Scrollbar*/
+::-webkit-scrollbar{
+    width: 11px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 10px;
+
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: lightgray;
 }
 /*End*/
