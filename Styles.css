@@ -12,8 +12,8 @@ body {
 
 /*Logo Format*/
 img.logo {
-    width: 252;
-    height: 80;
+    width: 252px;
+    height: 80px;
 }
 
 img.logo.others {
@@ -71,7 +71,7 @@ hr.titles {
 /*End*/
 
 p {
-    font-size: 10px;
+    font-size: 1em;
     margin: 20px;
 }
 
