@@ -10,6 +10,23 @@ body {
     overflow: overlay;
 }
 
+/*Text Formats*/
+h1.titles {
+    font-weight: 1000;
+    font-size: 100%;    
+}
+
+hr.titles {
+    width: 25%;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 15px;
+    margin: 20px;
+}
+/*End*/
+
 /*Logo Format*/
 img.logo {
     width: 252;
@@ -58,47 +75,30 @@ div.nav a:hover {
 }
 /*End*/
 
-/*Title Format*/
-h1.titles {
-    font-weight: 100;
-    font-size: 100%;    
-}
-
-hr.titles {
-    width: 25%;
-    margin: 0 auto;
-}
-/*End*/
-
-p {
-    font-size: 10px;
-    margin: 20px;
-}
-
 /*Listing Items or Images*/
 ul.listings { 
     list-style-type: none;
 }
 
-ul.listings.four ul.items {
-    padding: 4%
+div.items {
+    float: left;
+    text-align: center;
+    position: relative;
+    padding-left: 50px;
+    left: 20%;
 }
 
-ul.items {
-    float: left;
-    padding: 9%;
-    list-style-type: none;
-}
 
 /*Custom format for map display*/
-ul.listings_four div {
+ul.listings.four div.map {
     padding-bottom: 30px;
 }
 
-ul.listings_four img {
+ul.listings.four div.map img {
     padding-left: 20px;
 }
 /*End*/
+
 /*Dropdown Menu*/
 div.DropdownMenu {
 display: none;
