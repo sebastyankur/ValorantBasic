@@ -1,8 +1,9 @@
-html {
-    text-align: center;  
+header {
+    text-align: left;
 }
 
 body {
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #ece8e1;
     margin: 0;
@@ -10,15 +11,44 @@ body {
     overflow: overlay;
 }
 
+<<<<<<< HEAD
+/*Logo Format*/
+img.logo {
+    width: 252px;
+    height: 80px;
+=======
+/*Text Formats*/
+h1.titles {
+    font-weight: 1000;
+    font-size: 100%;    
+>>>>>>> 3260ca5f64efb99819370c31b32f73b1af01a840
+}
+
+hr.titles {
+    width: 25%;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 15px;
+    margin: 20px;
+}
+/*End*/
+
 /*Logo Format*/
 img.logo {
     width: 252px;
     height: 80px;
 }
 
-img.logo.others {
-    text-align: start;
-    padding-right: 150px;
+img.logo.homepage {
+    position: relative;
+    left: 40%;
+}
+
+img.logo.other {
+    position: relative;
+    left: 5%;
 }
 
 /*Thumbnails*/
@@ -58,6 +88,7 @@ div.nav a:hover {
 }
 /*End*/
 
+<<<<<<< HEAD
 /*Title Format*/
 h1.titles {
     font-weight: 100;
@@ -75,30 +106,32 @@ p {
     margin: 20px;
 }
 
+=======
+>>>>>>> 3260ca5f64efb99819370c31b32f73b1af01a840
 /*Listing Items or Images*/
 ul.listings { 
     list-style-type: none;
 }
 
-ul.listings.four ul.items {
-    padding: 4%
+div.items {
+    float: left;
+    text-align: center;
+    position: relative;
+    padding-left: 50px;
+    left: 20%;
 }
 
-ul.items {
-    float: left;
-    padding: 9%;
-    list-style-type: none;
-}
 
 /*Custom format for map display*/
-ul.listings_four div {
+ul.listings.four div.map {
     padding-bottom: 30px;
 }
 
-ul.listings_four img {
+ul.listings.four div.map img {
     padding-left: 20px;
 }
 /*End*/
+
 /*Dropdown Menu*/
 div.DropdownMenu {
 display: none;
