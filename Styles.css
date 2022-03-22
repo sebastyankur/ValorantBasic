@@ -1,8 +1,9 @@
-html {
-    text-align: center;  
+header {
+    text-align: left;
 }
 
 body {
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #ece8e1;
     margin: 0;
@@ -29,13 +30,18 @@ p {
 
 /*Logo Format*/
 img.logo {
-    width: 252;
-    height: 80;
+    width: 252px;
+    height: 80px;
 }
 
-img.logo.others {
-    text-align: start;
-    padding-right: 150px;
+img.logo.homepage {
+    position: relative;
+    left: 40%;
+}
+
+img.logo.other {
+    position: relative;
+    left: 5%;
 }
 
 /*Thumbnails*/
