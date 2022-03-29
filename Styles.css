@@ -11,10 +11,17 @@ body {
     overflow: overlay;
 }
 
+<<<<<<< HEAD
+/*Logo Format*/
+img.logo {
+    width: 252px;
+    height: 80px;
+=======
 /*Text Formats*/
 h1.titles {
     font-weight: 1000;
     font-size: 100%;    
+>>>>>>> 3260ca5f64efb99819370c31b32f73b1af01a840
 }
 
 hr.titles {
@@ -80,6 +87,26 @@ div.nav a:hover {
 }
 /*End*/
 
+<<<<<<< HEAD
+/*Title Format*/
+h1.titles {
+    font-weight: 100;
+    font-size: 100%;    
+}
+
+hr.titles {
+    width: 25%;
+    margin: 0 auto;
+}
+/*End*/
+
+p {
+    font-size: 1em;
+    margin: 20px;
+}
+
+=======
+>>>>>>> 3260ca5f64efb99819370c31b32f73b1af01a840
 /*Listing Items or Images*/
 ul.listings { 
     list-style-type: none;
