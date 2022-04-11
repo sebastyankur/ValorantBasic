@@ -8,17 +8,18 @@ header {
     text-align: left;
 }
 
+
 body {
     text-align: center;
-    justify-content: center;
     color: #000;
     font-family: Valo, Arial, Helvetica, sans-serif;
     background-color: #ece8e1;
     margin: 0;
     padding: 0;
     overflow: overlay;
-    margin-top: 20%;
+    margin-top: 200px;
 }
+
 .homebg {
     background-size: cover;
     padding-top: 50px;
@@ -46,11 +47,12 @@ p {
 img.logo {
     width: 252px;
     height: 80px;
+    display: block;
 }
 
 img.logo.homepage {
     position: relative;
-    left: 34%;
+    margin: auto;
 }
 
 img.logo.other {
@@ -77,18 +79,22 @@ nav {
     position: fixed;
     top: 0px;
     z-index: 1;
+    width: 100%;
+    max-height: 420px;
 }
 
 div.navBase {
-    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     background-color: #000000;
     overflow: hidden;
+    width: 100%;
 }
 
 div.nav {
-    float: left;
     position: relative;
 }
 
@@ -228,17 +234,28 @@ tr.Arsenal td {
 /*Agents Logo Format*/
 div.AgentsBase {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: center;
-    margin: 0 auto;
+    width: 100%;
 }
 
 div.Agents {
     display: inline-block;
-    width: 0 auto;
-    height: 0 auto;
+    width: auto;
+    margin: 10px;
+}
+
+div.Agents a{
+    text-decoration: none;
+    color: #000;
 }
 
 img {    
     max-width: 100%;
     max-height: 100%;
+}
+
+div.Agents:hover a {
+    color: #ff25ff;
 }
