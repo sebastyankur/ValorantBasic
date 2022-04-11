@@ -58,6 +58,11 @@ img.others {
     height: 40%;
 }
 
+img.main {
+    position: center;
+    width: 600px;
+    height: 337.5px;
+}
 /*Navigation Bar*/
 
 /*Makes Nav Always Visible*/
