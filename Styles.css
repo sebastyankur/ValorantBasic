@@ -1,11 +1,18 @@
+/*Fonts*/
+@font-face {
+    font-family: Valo;
+    src: url(Assets\Font\Valorant_Font.ttf);
+}
+
 header {
     text-align: left;
 }
 
 body {
     text-align: center;
+    justify-content: center;
     color: #000;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Valo, Arial, Helvetica, sans-serif;
     background-color: #ece8e1;
     margin: 0;
     padding: 0;
@@ -67,7 +74,7 @@ nav {
     z-index: 1;
 }
 
-ul.nav {
+div.navBase {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -96,16 +103,12 @@ div.nav a:hover {
 /*End*/
 
 /*Listing Items or Images*/
-ul.listings { 
-    list-style-type: none;
-}
-
 div.items {
     float: left;
     text-align: center;
     position: relative;
-    padding-left: 30px;
-    right: 1%;
+    padding: 20px;
+    padding-bottom: 50px;
 }
 
 
@@ -121,25 +124,24 @@ ul.listings.four div.map img {
 
 /*Dropdown Menu*/
 div.DropdownMenu {
-display: none;
-position: fixed;
-background-color: green;
-min-width: 150px;
-z-index: 2;
+    display: none;
+    position: fixed;
+    background-color: green;
+    min-width: 150px;
+    z-index: 2;
 }
 
-
 div.DropdownMenu a {
-color: black;
-padding: 14px 16px;
-display: block;
+    color: black;
+    padding: 14px 16px;
+    display: block;
 }
   
 div.DropdownMenu a:hover {
     background-color: #fff;
 }
 
-div:hover div.DropdownMenu {
+div.nav:hover div.DropdownMenu {
     display: block;
 }
 /*End*/
@@ -206,3 +208,32 @@ div.PN_Content {
     color: #000070;
 }
 /*End*/
+
+/*Arsenal Formatting*/
+tr.Arsenal td {
+    padding: 5px;
+    border-spacing: 0px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    width: 20%;
+    height: 20%;    
+}
+
+/*Agents Logo Format*/
+div.AgentsBase {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+div.Agents {
+    display: inline-block;
+    width: 0 auto;
+    height: 0 auto;
+}
+
+img {    
+    max-width: 100%;
+    max-height: 100%;
+}
