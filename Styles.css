@@ -14,6 +14,7 @@ footer {
     background-color: #000;
     color: #ece8e1;
     text-decoration: none;
+    margin-top: 25px;
 }
 
 
@@ -36,7 +37,7 @@ body {
 }
 
 /*Text Formats*/
-h1.titles {
+.titles {
     font-weight: bold;
     font-size: 20px;    
 }
@@ -243,7 +244,13 @@ tr.Arsenal td {
     border-width: 1px;
     border-color: gray;
     width: 20%;
-    height: 20%;    
+    height: 20%; 
+    transition: background-color 2s;
+}
+
+tr.Arsenal td:hover {
+    background-color: red;
+    color: white;
 }
 
 /*Agents Logo Format*/
