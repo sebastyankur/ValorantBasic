@@ -1,7 +1,7 @@
 /*Fonts*/
 @font-face {
     font-family: Valo;
-    src: url(Assets\Font\Valorant_Font.ttf);
+    src: url(Valorant_Font.ttf);
 }
 
 header {
@@ -21,7 +21,7 @@ footer {
 body {
     text-align: center;
     color: #000;
-    font-family: Valo, Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     background-color: #ece8e1;
     margin: 0;
@@ -38,6 +38,7 @@ body {
 
 /*Text Formats*/
 .titles {
+    font-family: Valo;
     font-weight: bold;
     font-size: 20px;    
 }
@@ -115,7 +116,9 @@ div.nav {
 
 div.nav a {
     display: block;
-    padding: 14px 16px;
+    padding: 14px 16px 14px 16px;
+    height: 25px;
+    width: 25px;
     color: #ece8e1;
     text-align: center;
     text-decoration: none;
@@ -134,14 +137,22 @@ div.items {
     margin-bottom: 50px;
 }
 
-
 /*Custom format for map display*/
-ul.listings.four div.map {
-    margin-bottom: 30px;
+div.mapBase {
+    margin: auto;
 }
 
-ul.listings.four div.map img {
+div.mapBase div.map {
+    display: inline-block;
+    width: 20%;
+    height: 5%;
+    margin-bottom: 20px;
+}
+
+div.mapBase div.map img {
     margin-left: 20px;
+    max-width: 100%;
+    max-height: 100%;
 }
 /*End*/
 
@@ -152,11 +163,12 @@ div.DropdownMenu {
     background-color: green;
     min-width: 150px;
     z-index: 2;
+    margin: auto;
+    padding: auto;
 }
 
 div.DropdownMenu a {
     color: black;
-    padding: 14px 16px;
     display: block;
 }
   
@@ -238,6 +250,7 @@ div.PN_Content {
 
 /*Arsenal Formatting*/
 tr.Arsenal td {
+    font-family: Valo;
     padding: 5px;
     border-spacing: 0px;
     border-style: solid;
@@ -283,5 +296,5 @@ div.Agents:hover a {
 }
 
 div.Agents:hover {
-    box-shadow: 1px 1px 10px 1px gray;
+    box-shadow: 0px 0px 10px 3px gray;
 }
