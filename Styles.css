@@ -250,20 +250,27 @@ div.PN_Content {
 
 /*Arsenal Formatting*/
 tr.Arsenal td {
-    font-family: Valo;
-    padding: 5px;
+    padding: 10px;
+    border: 1px solid gray;
     border-spacing: 0px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: gray;
     width: 20%;
     height: 20%; 
     transition: background-color 2s;
+    vertical-align: top;
+}
+
+tr.Arsenal h5 {
+    font-family: Valo;
 }
 
 tr.Arsenal td:hover {
     background-color: red;
     color: white;
+}
+
+p.arsenalContent {
+    display: none;
+    font-size: 12px;
 }
 
 /*Agents Logo Format*/
@@ -282,8 +289,9 @@ div.Agents {
 }
 
 div.Agents a{
+    color: black;
     text-decoration: none;
-    color: #000;
+    font-size: 12px;
 }
 
 img {    
