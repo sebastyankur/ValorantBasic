@@ -292,7 +292,7 @@ tr.Arsenal img {
     filter: drop-shadow(10px 10px 15px #363232);
 }
 
-p.arsenalContent {
+div.arsenalContent {
     display: none;
     font-size: 12px;
 }
@@ -334,21 +334,26 @@ div.Agents:hover {
 /*MAP*/
 div.mapContainer {
     border-top: 2px red solid;
+    /* Background Image - Backup
     background: url(Assets/bg/Ascent_Map.png);
     background-size: 100%;
     background-repeat: no-repeat;
+    */
     width: auto;
-    height: 350px;
+    height: auto;
+    margin-top: 20px;
 }
-
+/* It just Works
 div.mapContent {
     text-align: left;
     background-color: green;
     display: inline-block;
     min-width: 100px;
     min-height: 100px;
+    padding: 10px;
+    font-size: 10px;
 }
-
+*/
 /*Footers*/
 footer {
     width: auto;
@@ -371,6 +376,11 @@ footer a {
     color: inherit;
     display: block;
     margin: 5px 5px 10px 5px;
+}
+
+footer a:hover {
+    color: whitesmoke;
+    opacity: 0.8;
 }
 
 footer .container {
