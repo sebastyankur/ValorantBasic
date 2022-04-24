@@ -9,7 +9,7 @@ function Show(Version) {
         base.style.backgroundColor = "#000000";
     }
 }
-var change = true;
+
 function contentChange(Version) {
     let imageContent = document.getElementsByClassName("arsenalItem")[Version];
     let textContent = document.getElementsByClassName("arsenalContent")[Version];
@@ -19,31 +19,39 @@ function contentChange(Version) {
     } else {
         textContent.style.display = "block";
         imageContent.style.display = "none";
-
     }
 }
 
+function addOrRemoveContent(Agent) {
+    const a = document.querySelector(`#${Agent}`);
+    if (a.style.display == "none") {a.style.display = "block";} else {a.style.display = "none";}
+}
 
 window.addEventListener('scroll', function() {
-    changeButton("Duelist", "Duelist", "Sentinal");
-    changeButton("Duelist", "Sentinal", "Controller");
-    changeButton("Sentinal", "Controller", "Initiator");
-    changeButton("Controller", "Initiator", "Initiator");
+    if (window.location.pathname == "/Agent_Tips.html") {
+        changeButton("Duelist", "Duelist", "Sentinel");
+        changeButton("Duelist", "Sentinel", "Controller");
+        changeButton("Sentinel", "Controller", "Initiator");
+        changeButton("Controller", "Initiator", "Initiator");    
+    }
 })
 
 function changeButton(before, now, after) {
-    const a = document.querySelector(`#${before}`).getBoundingClientRect();
-    const b = document.querySelector(`#${now}`).getBoundingClientRect();
-    const c = document.querySelector(`#${after}`).getBoundingClientRect();
-    const d = document.querySelector("#Prev");
-    const e = document.querySelector("#Next");
-    if ((b.top < 250 && c.top > 450) || (a.top < 250 && b.top < 250)) {
-        d.innerHTML = `<a href="#${before}">${before}</a>`;
-        e.innerHTML = `<a href="#${after}">${after}</a>`;
-    }
+        const a = document.querySelector(`#${before}`).getBoundingClientRect();
+        const b = document.querySelector(`#${now}`).getBoundingClientRect();
+        const c = document.querySelector(`#${after}`).getBoundingClientRect();
+        const d = document.querySelector("#prev");
+        const e = document.querySelector("#next");
+        if ((b.top < 250 && c.top > 450) || (a.top < 250 && b.top < 250)) {
+            d.innerHTML = `<a href="#${before}">${before}</a>`;
+            e.innerHTML = `<a href="#${after}">${after}</a>`;
+        }
 }
 
 window.addEventListener('click', function() {
-    const base = document.querySelector(".move");
-    if (base.style.display == "none") {base.style.display = "flex"} else {base.style.display = "none"}
+    if (window.location.pathname == "/Agent_Tips.html") {
+        const base = document.querySelector(".move");
+        console.log(base.style.display);
+        if (base.style.display == "none") {base.style.display = "flex";} else {base.style.display = "none";}
+    } 
 })
