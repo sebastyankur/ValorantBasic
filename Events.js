@@ -22,6 +22,11 @@ function contentChange(Version) {
     }
 }
 
+function addContent(Agent) {
+    const a = document.querySelector(`#${Agent}`);
+    if (a.style.display == "none") {a.style.display = "block";} else {a.style.display = "none";}
+}
+
 
 window.addEventListener('scroll', function() {
     if (window.location.pathname == "/Agent_Tips.html") {
