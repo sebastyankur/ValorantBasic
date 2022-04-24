@@ -27,6 +27,7 @@ body {
 
 a {
     text-decoration: none;
+    color: #000;    
 }
 
 .homebg {
@@ -269,10 +270,14 @@ div.PN_Content {
 /*End*/
 
 /*Arsenal Formatting*/
+table {
+    margin: 10px 10% 10px 10%;
+    border-collapse: collapse;
+}
+
 tr.Arsenal td {
     padding: 10px;
     border: 1px solid gray;
-    border-spacing: 0px;
     transition: all 2s;
     vertical-align: top;
     min-width: 20%;
@@ -294,7 +299,6 @@ tr.Arsenal img {
 
 div.arsenalContent {
     display: none;
-    font-size: 12px;
 }
 
 /*Agents Logo Format*/
@@ -389,3 +393,30 @@ footer .container {
 }
 
 
+/*Movement for Agent*/
+.move {
+    display: none;
+    position: fixed;
+    justify-content: space-between;
+    bottom: 15;
+    width: 100%;
+}
+
+#prev {
+    margin-left: 5%;
+}
+
+#next {
+    margin-right: 5%;
+}
+
+#prev, #next {
+    border-radius: 20px;
+    border-width: 0px;
+    background-color: lightblue;
+}
+
+.move a {
+    font-family: Valo;
+    font-size: 2em;
+}
