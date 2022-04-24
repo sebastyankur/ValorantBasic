@@ -31,7 +31,6 @@ a {
 }
 
 .homebg {
-    background-size: cover;
     padding-top: 50px;
     padding-bottom: 25px;
 }
@@ -238,6 +237,14 @@ div.PN_Content {
     text-align: justify;
     padding: 10px;
 }
+
+.patchNoteBody h2, p, ul {
+    text-align: left;
+}
+
+.patchNoteBody h2 {
+    margin-left: 20px;
+}
 /*End*/
 
 .Info_Title{
@@ -338,26 +345,11 @@ div.Agents:hover {
 /*MAP*/
 div.mapContainer {
     border-top: 2px red solid;
-    /* Background Image - Backup
-    background: url(Assets/bg/Ascent_Map.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    */
     width: auto;
     height: auto;
     margin-top: 20px;
 }
-/* It just Works
-div.mapContent {
-    text-align: left;
-    background-color: green;
-    display: inline-block;
-    min-width: 100px;
-    min-height: 100px;
-    padding: 10px;
-    font-size: 10px;
-}
-*/
+
 /*Footers*/
 footer {
     width: auto;
@@ -398,7 +390,7 @@ footer .container {
     display: none;
     position: fixed;
     justify-content: space-between;
-    bottom: 15;
+    bottom: 15px;
     width: 100%;
 }
 
