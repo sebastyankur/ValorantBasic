@@ -118,9 +118,143 @@
 
             <button class="Show" onclick="Show(2)">Patch Note 4.04</button>
             <div class="PN_Content">
-                <p>Agent Updates</p>
-                <p></p>
-                </p>
+                <p>This is the start of VALORANT Episode 4 Act II, the one focused on cleaning house. It starts with the promised Yoru overhaul, a reshaping of the Controller role, and a renovation to Icebox (don’t skip that Ascent update though).</p>
+                <p>The pure changes are listed below, but we have two special dev articles lined up that will dive deeper behind the changes and goals for the Controller Agent and Icebox updates. </p>
+                <h2>AGENT UPDATES</h2>
+                <h2>GENERAL</h2>
+                <p>Improved the system used to place abilities at targeted ground locations. This update should make it easier to find valid placement locations in tight spaces. These are the abilities affected:</p>
+                        <p>Omen's Shrouded Step</p>
+                        <p>Viper's pit</p>
+                        <p>Chamber’s Trademark and Rendez-vous</p>
+                        <p>Every Killjoy ability</p>
+                        <p>Yoru's Gatecrash</p>
+                        <p>Sage’s Barrier Orb</p>
+                <h2>OMEN</h2>
+                    <p>Dark Cover</p>
+                        <p>Cooldown decreased 40s >>> 30s</p>
+                        <p>ost increased 100 >>> 150</p>
+                        <p>Projectile Speed increased 2800 >>> 6400</p>
+                    <p>Shrouded Step</p>
+                        <p>Cost decreased 150 >>> 100</p>
+                        <p>Pre teleport delay decreased 1s >>> 0.7s</p>
+                    <p>Paranoia</p>
+                        <p>Added forward spawn offset, so players adjacent to Omen are not hit</p>
+                <h2>BRIMSTONE</h2>
+                    <p>Sky Smoke</p>
+                        <p>Deploy time decreased 2 >>> 1 second</p>
+                        <p>Deploy radius increased 5000 >>> 5500</p>
+                        <p>Smoke height increased to match other Controllers</p>
+                    <p>Stim Beacon</p>
+                        <p>Now also applies a 15% speed boost in addition to RapidFire.</p>
+                <h2>ASTRA</h2>
+                    <p>stars</p>
+                        <p>Max Stars reduced 5 >>> 4</p>
+                        <p>Cooldown on retrieving a Star increased 14 >>> 25</p>
+                        <p>Astra can now pick up placed Stars during the Buy Phase to refund their charge immediately.</p>
+                        <p>Max distance of Star Placement increased 10000 >>> 30000 to allow her to place Stars across the furthest corners of maps.</p>
+                    <p>Gravity Well</p>
+                        <p>Cooldown Increased 25 >>> 45</p>
+                        <p>Gravity Well Size Decreased 525 >>> 475</p>>
+                        <p>Gravity Well no longer affects anyone fully underneath the Gravity Well.</p>
+                    <p>Nova Pulse</p>
+                        <p>Cooldown Increased 25 >>> 45</p>
+                        <p>Nova Pulse no longer affects anyone fully underneath the Nova Pulse.</p>
+                    <p>Nebula</p>
+                        <p>Cooldown Increased 14 >>> 25</p>
+                        <p>Nebula cooldowns are now sequential instead of simultaneous</p>
+                        <p>Nebula size increased 410 >>> 475</p>
+                    <p>Astral Form</p>
+                        <p>While in Astral form, pings are no longer blocked by level geometry that Astra cannot see</p>
+                        <p>Astra’s targeting ring in Astral form is reduced to one ring that reflects the now unified size of all her utility</p>
+                        <p>Astra’s targeting ring no longer randomly disappears when aiming across some map locations</p>
+                        <p>Increased the speed of the overlay that covers Astra’s screen when transitioning in and out of Astral form</p>
+                        <p>Fixed an issue where Stars were placed slightly above the location Astra was targeting.</p>
+                <h2>VIPER</h2>
+                    <p>Fuel</p>
+                        <p>Fuel drain increased 50% when Toxic Screen and Poison Cloud are both active.</p>
+                        <p>Viper’s fuel bar now turns red when she does not have enough fuel to activate her abilities.</p>
+                    <p>Toxic Screen</p>
+                        <p>Cooldown after deactivating increased 6 >>> 8</p>
+                        <p>Cooldown timer now starts when her smoke starts dissipating instead of when the deactivation telegraph plays.</p>
+                        <p>Deactivation delay decreased 1 >>> .8</p>
+                        <p>Toxic Screen now has yellow lights that indicate when it is on cooldown</p>
+                        <p>Removed delay on Toxic Screen disabling when Viper is suppressed.</p>
+                        <p>Added a unique VO line that plays when her smoke is disabled by suppress.</p>
+                    <p>Poison Cloud</p>
+                        <p>Cooldown after deactivating increased 6 >>> 8.</p>
+                        <p>Cooldown timer now starts when her smoke starts dissipating instead of when the deactivation telegraph plays.</p>
+                        <p>Deactivation delay decreased 1 >>> .8</p>
+                        <p>Poison Orb now has a yellow light to indicate when it is on cooldown.</p>
+                        <p>Removed delay on Poison Orb disabling when Viper is suppressed.</p>
+                        <p>Added a unique VO line that plays when her smoke is disabled by suppress.</p>
+                    <p>Snake Bite</p>
+                        <p>Duration decreased 6.5 >>> 5.5</p>
+                <h2>YORU</h2>
+                    <p>Fakeout</p>
+                        <p>Charges reduced from 2 >>> 1</p>
+                        <p>Decoy HP: 150</p>
+                        <p>Decoy is now a full running version of Yoru and can only be sent running forward</p>
+                        <p>Right -click to place a stationary marker for the decoy</p>
+                        <p>Reactivate similarly to footsteps to create the decoy that runs forward</p>
+                        <p>Upon taking damage from an enemy gun, the decoy winds up, turns towards the enemy that shot it, and explodes after a short delay.</p>
+                        <p>Enemies within the cone are flashed</p>
+                    <p>Gatecrash</p>
+                        <p>Charges increased from 1 >>> 2</p>
+                        <p>Cost: 200 Credits</p>
+                        <p>Cooldown charge refresh removed, switched back to 2-kill reset</p>
+                        <p>Gatecrash can be faked by pressing F, while hovering over the beacon</p>
+                        <p>Fake teleport will play audio and portal visuals as if Yoru is attempting to teleport.</p>
+                        <p>Time it takes for teleport beacon has decreased 1.5 >>> 0.5 seconds</p>
+                        <p>Teleport beacon’s in-game audio while traveling reduced 22.5m>>>12.5m</p>
+                        <p>Teleport beacon’s speed has been increased 675 >>> 800</p>
+                        <p>Upon activating a fake teleport, the beacon creates a small decal on the floor for 30 seconds to indicate location of the fake teleport</p>
+                    <p>Dimensional Drift</p>
+                        <p>Duration increased 8 >>> 10 seconds</p>
+                        <p>Yoru is not revealed to enemies</p>
+                        <p>Unequip delay time increased 0.6 >>> 1.2 seconds</p>
+                        <p>Yoru is now able to cast all utility out of his ultimate</p>
+                        <p>Yoru’s footsteps can now be heard within 15m of Yoru’s location</p>
+                        <p>Cast delay added upon casting Dimensional Drift, preventing the invulnerability frame on cast</p>
+                <h2>MAP UPDATES</h2>
+                    <h2>ASCENT</h2>
+                        <p>B orb can now be taken from the lower box (previously, you had to double jump up to the box to get it)</p>
+                    <h2>ICEBOX</h2>
+                        <p>Doorway from Attacker spawn building near Green lane moved to the first cubby. This is to give attackers a new way to approach B Green instead of having to enter from two similar positions.</p>
+                        <p>Green lane slightly widened. This is to make moving through this space more comfortable.</p>
+                        <p>Pocket in Green lane near Yellow extended. This is to make angles toward B Site and Snowman more clear and readable.</p>
+                        <p>Yellow container adjusted and new stack of crates added. As players have settled into Icebox we’ve noticed a lot of rounds revolve around anchoring down behind yellow during post plant situations. This change should allow Yellow to retain some power while adding more value to holding space on the actual site.</p>
+                        <p>Lower container removed and geometry adjusted into a cubby facing Green. Doorway on the upper container widened and it’s position adjusted. This should allow players to better isolate fights around the site and make utility usable more meaningful.</p>
+                        <p>Outer wall on B site and crane structure brought in toward the site. Narrowing the site allows for more controllers to comfortably use their utility without having to worry about gaps.</p>
+                        <p>Building in Back B closed off. We want to encourage attackers to push further and hold more space. Closing off this building should allow players to better anchor themselves in Snowman. It should also better highlight using B Fence to cut off rotations.</p>
+                        <p>Plant zone on B site adjusted. This change is to encourage more spike plant diversity while retaining some safer defaults to work with. You can now also plant on the bridge from kitchen to upper container as well.</p>
+                        <p>Back wall in Kitchen adjusted. This change should help moving through this space feel more comfortable and allow players to more easily clear this space.</p>
+                        <p>Crates added to Orange lane to block line of sight from under tube to danger.</p>
+                        <p>Boiler ramp geo simplified and slightly narrowed. Smokes will now fully cover Boiler and players should find head peeks from ramp more predictable.</p>
+                        <p>Cover on back A site adjusted. This change should give Defenders a little extra space to anchor on.</p>
+                        <p>Head peek on attacker side pipes removed. Where Attackers can peek from on A Site can feel overwhelming. This change should allow Defenders to better isolate where threats can come from.</p>
+                        <p>Doorway into A lowered to prevent foot shot on players on top of screens.</p>
+                <h2>COMPETITIVE UPDATES</h2>
+                    <p>Deterministic map selection follows 3 rules when picking a map, after players have been selected to play a match.</p>
+                    <p>The system will look at all maps players have played over the last 5 maps for that mode.</p>
+                    <p>The system will remove any maps that a player has played twice in the past 5 maps.</p>
+                    <p>The system will pick the least played map.</p>
+                    <p>If all maps have been removed due to the “Twice Played” rule, those maps will be added back to the pool and the least played map will be picked.</p>
+                <h2>BUGS</h2>
+                <h2>AGENTS</h2>
+                    <p>Fixed issue where enemies wouldn’t trigger Cypher’s Trapwire in rare situations</p>
+                    <p>Fixed the boom not showing up for Astra if planted while in Astral Form</p>
+                    <p>Fixed a bug where Viper’s Toxic Screen audio could play in the next round if it is activated right on round end</p>
+                    <p>Fixed Yoru’s Gatecrash icon showing up as a big white circle on Brimstone’s targeting map</p>
+                    <p>Fixed a bug where Chamber’s teleport would sometimes fail when cast immediately after firing the last bullet of Headhunter</p>
+                    <p>Fixed a bug where Chamber’s Tour de Force would inconsistently spawn slow zones when firing at KAY/O during NULL/CMD</p>
+                <h2>SOCIAL</h2>
+                    <p>Fixed an issue with AFKs in Escalation game mode</p>
+                <h2>ESPORTS FEATURES</h2>
+                    <p>Fixed a bug where the timer would overlap itself while viewing the megamap as an observer</p>
+                <h2>GAME SYSTEMS</h2>
+                    <p>Fixed an issue where you could tap the scroll wheel to activate the defuse audio without actually initiating a defuse.</p>
+
+
             </div>
         </div>
 
