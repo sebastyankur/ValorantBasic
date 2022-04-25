@@ -56,7 +56,7 @@ p {
 }
 
 body p {
-    margin: 40px 20px 40px 20px;
+    margin: 40px 20% 40px 20%;
 }
 /*End*/
 
@@ -257,7 +257,7 @@ div.PN_Content {
     padding: 10px;
 }
 
-.patchNoteBody h2, p, ul {
+.patchNoteBody h2, .patchNoteBody p, .patchNoteBody ul {
     text-align: left;
 }
 
@@ -381,7 +381,7 @@ footer {
     color: #fff;
 }
 
-footer h1, h2, h3, h4, h5 {
+footer h1, footer h2, footer h3, footer h4, footer h5 {
     font-size: 15px !important;
     color: inherit;
 }
@@ -467,4 +467,16 @@ footer .container {
 
 .abilityBase div {
     margin-right: 20px;
+    height: 100%;
+    width: 25;
+}
+
+.abilityBase p {
+    margin: 10px 10px 10px 10px;
+    height: 100%;
+    width: 60%;
+}
+
+.abilityBase h2 {
+    font-size: 1.25em;
 }
