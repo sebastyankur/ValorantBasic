@@ -1,22 +1,22 @@
 /*Fonts*/
 @font-face {
     font-family: Valo;
-    src: url(Valorant_Font.ttf);
+    src: url(/Assets/Font/Valorant_Font.ttf);
 }
 
 @font-face {
     font-family: Anton;
-    src: url(Anton-Regular.ttf);
+    src: url(/Assets/Font/Anton-Regular.ttf);
 }
 
 @font-face {
     font-family: SourceSans;
-    src: url(SourceSansPro-Regular.ttf);
+    src: url(/Assets/Font/SourceSansPro-Regular.ttf);
 }
 
 @font-face {
     font-family: Exo2;
-    src: url(Exo2-Light.ttf);
+    src: url(/Assets/Font/Exo2-Light.ttf);
 }
 
 header {
