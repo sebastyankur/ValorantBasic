@@ -4,6 +4,16 @@
     src: url(Valorant_Font.ttf);
 }
 
+@font-face {
+    font-family: Anton;
+    src: url(Anton-Regular.ttf);
+}
+
+@font-face {
+    font-family: SourceSans;
+    src: url(SourceSansPro-Regular.ttf);
+}
+
 header {
     text-align: left;
 }
@@ -16,7 +26,7 @@ html {
 body {
     text-align: center;
     color: #000;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Anton, SourceSans;
     font-size: 1em;
     background-color: #ece8e1;
     margin: 0;
@@ -38,6 +48,7 @@ a {
 /*Text Formats*/
 h1, h2, h3, h4, h5 {
     font-size: 2em;
+    font-family: Valo, Anton SourceSans;
 }
 
 .titles {
@@ -156,6 +167,7 @@ button.transfer {
     border-radius: 15px;
     width: 35%;
     font-size: 15px;
+    margin: 20px 0px 5px 0px;
 }
 
 button.transfer a {
@@ -180,6 +192,10 @@ div.items {
 /*Custom format for map display*/
 div.mapBase {
     margin: auto;
+}
+
+div.mapBase h5 {
+    font-size: 1em;
 }
 
 div.mapBase div.map {
@@ -229,12 +245,12 @@ div.nav:hover div.DropdownMenu {
     background-color: transparent;
 }
 ::-webkit-scrollbar-thumb {
-    background-color: gray;
+    background-color: rgb(81, 80, 80);
     border-radius: 10px;
 
 }
 ::-webkit-scrollbar-thumb:hover {
-    background-color: darkgrey;
+    background-color: rgb(151, 149, 149);
 }
 /*End*/
 
@@ -251,7 +267,7 @@ div.Patch_Notes button {
 div.PN_Content {
     display: none;
     overflow: hidden;
-    background-color: grey;
+    background-color: lightskyblue;
     margin-bottom: 5px;
     text-align: justify;
     padding: 10px;
@@ -343,10 +359,13 @@ div.Agents {
     margin: 10px;
 }
 
+div.Agents h5 {
+    font-size: 1em;
+}
+
 div.Agents a{
     color: black;
     text-decoration: none;
-    font-size: 12px;
 }
 
 img {    
@@ -383,12 +402,12 @@ footer {
 }
 
 footer h1, footer h2, footer h3, footer h4, footer h5 {
-    font-size: 15px !important;
+    font-size: 15px;
     color: inherit;
 }
 
 footer a {
-    font-size: 12px !important;
+    font-size: 12px;
     color: inherit;
     display: block;
     margin: 5px 5px 10px 5px;
@@ -401,7 +420,6 @@ footer a:hover {
 
 footer .container {
     margin: 10px 50px 25px 50px;  
-
 }
 
 
@@ -442,7 +460,7 @@ footer .container {
     right: 10%;
     bottom: 10%;
     z-index: 3;
-    background-color: green;
+    background-color: lightseagreen;
     text-align: center;
     overflow: auto;
 }
@@ -475,12 +493,16 @@ footer .container {
     display:flex; 
     flex-direction: row; 
     margin-left: 20px;
+    width: 100%;
+    border: 3px solid #000;
+    margin: 0px;
+    margin-top: -3px;
 }
 
 .abilityBase div {
     margin-right: 20px;
     height: 100%;
-    width: 25;
+    width: 35%;
 }
 
 .abilityBase p {
