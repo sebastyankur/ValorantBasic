@@ -32,7 +32,7 @@ body {
     text-align: center;
     color: #000;
     font-family: Exo2, Anton;
-    font-size: 1em;
+    font-size: 1.5em;
     background-color: #ece8e1;
     margin: 0;
     padding: 0;
@@ -66,9 +66,9 @@ hr.titles {
     margin: 0 auto;
 }
 
-p {
+p ul {
     font-family: Exo2, Anton;
-    font-size: 1em;
+    font-size: 1.5em;
     margin: 20px;
 }
 
@@ -172,7 +172,7 @@ button.transfer {
     background-color: gray;
     border-radius: 15px;
     width: 35%;
-    font-size: 15px;
+    font-size: 1em;
     margin: 20px 0px 5px 0px;
 }
 
@@ -222,7 +222,7 @@ div.mapBase div.map img {
 div.DropdownMenu {
     display: none;
     position: fixed;
-    background-color: green;
+    background-color: whitesmoke;
     min-width: 150px;
     z-index: 2;
     margin: auto;
@@ -235,7 +235,7 @@ div.DropdownMenu a {
 }
   
 div.DropdownMenu a:hover {
-    background-color: #fff;
+    background-color: lightblue;
 }
 
 div.nav:hover div.DropdownMenu {
