@@ -14,6 +14,11 @@
     src: url(SourceSansPro-Regular.ttf);
 }
 
+@font-face {
+    font-family: Exo2;
+    src: url(Exo2-Light.ttf);
+}
+
 header {
     text-align: left;
 }
@@ -26,7 +31,7 @@ html {
 body {
     text-align: center;
     color: #000;
-    font-family: Anton, SourceSans;
+    font-family: Exo2, Anton;
     font-size: 1em;
     background-color: #ece8e1;
     margin: 0;
@@ -48,11 +53,11 @@ a {
 /*Text Formats*/
 h1, h2, h3, h4, h5 {
     font-size: 2em;
-    font-family: Valo, Anton SourceSans;
+    font-family: Valo, Anton, SourceSans;
 }
 
 .titles {
-    font-family: Valo;
+    font-family: Valo, Anton, SourceSans;
     font-weight: bold;
 }
 
@@ -62,6 +67,7 @@ hr.titles {
 }
 
 p {
+    font-family: Exo2, Anton;
     font-size: 1em;
     margin: 20px;
 }
