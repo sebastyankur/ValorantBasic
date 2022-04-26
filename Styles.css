@@ -178,6 +178,7 @@ button.transfer {
 
 button.transfer a {
     color: #000;
+    display: block;
 }
 
 
